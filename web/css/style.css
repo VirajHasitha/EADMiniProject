@@ -1262,8 +1262,8 @@ code {
   background-color: #757575;
 }
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-  background-color:#5bb2fc; !important;
-  border-color:#5bb2fc; !important;
+  background-color:#5bb2fc; 
+  border-color:#5bb2fc;
 }
 .grid_3 p {
   color: #999;
