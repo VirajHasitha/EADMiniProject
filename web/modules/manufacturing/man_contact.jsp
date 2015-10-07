@@ -56,29 +56,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</li>
 						<!---->
 						<li class="col-md-2">
-						<a href="man_about.jsp" class="orang">
-						<span class="glyphicon glyphicon-user " aria-hidden="true"></span>
-						About
+						<a href="man_services.jsp" class="sky">
+						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+						Design
 						</a>
 						</li>
 						<!---->
 						<li class="col-md-2">
 						<a href="man_news.jsp" class="gray">
 						<span class="glyphicon glyphicon-thumbs-up " aria-hidden="true"></span>
-						News
+						Availability
 						</a>
 						</li>
 						<!---->
 						<li class="col-md-2">	
 						<a href="man_blog.jsp" class="green">
 						<span class="glyphicon glyphicon-picture " aria-hidden="true"></span>
-						Blog
+						Price
 						</a>
 						</li>
 						<li class="col-md-2">
 						<a href="man_contact.jsp" class="sky">
 						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-						Contact
+						Report
 						</a>
 						</li>
 						<div class="clearfix">
@@ -100,7 +100,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="container">
 				<div class="logo">
-						<h1><a href="man_index.jsp">Manufacturing</a></h1>
+						<h1><a href="man_index.jsp">Report</a></h1>
 				</div>
 				<div class="ad-ph">
 					<p>Call Us : <span>(880)</span>123 2500</p>
