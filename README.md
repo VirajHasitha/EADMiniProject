@@ -32,7 +32,13 @@ CREATE TABLE EngineParts(
         EngineImage varchar(200)
 );
 
-
+CREATE TABLE PartType(
+	PartID int ,
+	ModelID int,
+        Primary key(PartID,ModelID),
+        foreign key(ModelID) references EngineModel(ModelID),
+        foreign key(PartID) references EngineParts(PartID)
+);
 
 insert into EngineModel(ModelID,EngineName,FuelType,Cylinders,CubicCapacity,Cost) values(1,"A","diesel",2,30,10000);
 insert into EngineModel(ModelID,EngineName,FuelType,Cylinders,CubicCapacity,Cost) values(2,"B","diesel",4,40,40000);
