@@ -56,4 +56,15 @@ insert into EngineParts(PartID,PartName,PartDescription,Cost,Quantity) values(14
 insert into EngineParts(PartID,PartName,PartDescription,Cost,Quantity) values(15,"Screws","F",50,1500);
 insert into EngineParts(PartID,PartName,PartDescription,Cost,Quantity) values(16,"Washers","G",500,200);
 
-insert into EngineParts(PartID,PartName,PartDescription,Cost,Quantity) values(16,"Washers","G",500,200);
+insert into PartType(PartID,ModelID) values(10,1);
+insert into PartType(PartID,ModelID) values(11,1);
+insert into PartType(PartID,ModelID) values(15,2);
+insert into PartType(PartID,ModelID) values(16,2);
+insert into PartType(PartID,ModelID) values(13,3);
+insert into PartType(PartID,ModelID) values(12,3);
+insert into PartType(PartID,ModelID) values(11,4);
+insert into PartType(PartID,ModelID) values(14,4);
+insert into PartType(PartID,ModelID) values(16,5);
+insert into PartType(PartID,ModelID) values(16,5);
+insert into PartType(PartID,ModelID) values(10,6);
+insert into PartType(PartID,ModelID) values(14,6);
