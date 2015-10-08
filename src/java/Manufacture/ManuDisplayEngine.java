@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -42,35 +43,35 @@ public class ManuDisplayEngine extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
+          PrintWriter out = response.getWriter();
         try {
             dbconn=new ManuDatabaseConnection();
             conn=dbconn.setConnection();
             stmt=conn.createStatement();
-            query1="select * from enginetype;";
+            query1="select * from EngineModel;";
              res1 =dbconn.getResult(query1, conn);
           while(res1.next()){
-                lst1.add(res1.getString("engine_model"));
-                lst1.add(res1.getString("fuel_type"));
-                lst1.add(res1.getString("mounting"));
-                lst1.add(res1.getString("cubic_cap"));
-                lst1.add(res1.getString("cylinder"));
-                lst1.add(res1.getString("item"));
+                lst1.add(res1.getString("ModelID"));
+                lst1.add(res1.getString("EngineName"));
+                lst1.add(res1.getString("FuelType"));
+                lst1.add(res1.getString("Cylinders"));
+                lst1.add(res1.getString("CubicCapacity"));
+                lst1.add(res1.getString("Cost"));
                 
             }res1.close(); 
         }catch (Exception e){
              
-            RequestDispatcher rd =request.getRequestDispatcher("error.jsp");
+            RequestDispatcher rd =request.getRequestDispatcher("/modules/manufacturing/error.jsp");
             rd.forward(request, response);
         }finally
         {
             request.setAttribute("EmpData1", lst1);
-             RequestDispatcher rd =request.getRequestDispatcher("manufacture.jsp");
+             RequestDispatcher rd =request.getRequestDispatcher("/modules/manufacturing/man_index.jsp");
             rd.forward(request, response);
              lst1.clear();
              out.close();
         }
-        }
+    }
     
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

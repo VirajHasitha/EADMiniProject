@@ -1,36 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
-    <servlet>
-        <servlet-name>mainchatapp</servlet-name>
-        <servlet-class>Sales.chatapp.mainchatapp</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ManuDisplayData</servlet-name>
-        <servlet-class>Manufacture.ManuDisplayData</servlet-class>
-    </servlet>
+   
     <servlet>
         <servlet-name>ManuDisplayEngine</servlet-name>
         <servlet-class>Manufacture.ManuDisplayEngine</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>ManuOrder1</servlet-name>
-        <servlet-class>Manufacture.ManuOrder1</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>mainchatapp</servlet-name>
-        <url-pattern>/mainchatapp</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ManuDisplayData</servlet-name>
-        <url-pattern>/ManuDisplayData</url-pattern>
-    </servlet-mapping>
+   
     <servlet-mapping>
         <servlet-name>ManuDisplayEngine</servlet-name>
         <url-pattern>/ManuDisplayEngine</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ManuOrder1</servlet-name>
-        <url-pattern>/ManuOrder1</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

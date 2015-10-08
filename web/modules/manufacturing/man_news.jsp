@@ -50,7 +50,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                                
 						<!---->
 						<li class="col-md-2">
-						<a href="man_index.jsp" class="pink">
+						<a href="../../ManuDisplayEngine" class="pink">
 						<span class="glyphicon glyphicon-cog " aria-hidden="true"></span>
 						Manufacturing
 						</a>

@@ -97,7 +97,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  <img src="images/service-2.png" alt="" />
 					</div>
 					<div class="text list_2_of_1">
-						  <a href="modules/manufacturing/man_index.jsp" class="servicebutton">Manufacturing</a></h3>
+						  <a href="ManuDisplayEngine" class="servicebutton">Manufacturing</a></h3>
 						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt  ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor labore.</p>
 					</div>
 					<div class="clearfix"></div>

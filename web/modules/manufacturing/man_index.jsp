@@ -1,3 +1,5 @@
+<%@page import="java.util.List"%>
+<%@page import="java.util.Iterator"%>
 <!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -22,6 +24,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<script src="../../js/module_jquery-2.1.4.min.js"></script>
 		<!--bootstrap-js-->
 			<script src="../../js/module_bootstrap.min.js"></script>
+                        
+                          <style>
+                        table, th, td {
+                         border: 2px solid black;
+                         border-collapse: collapse;
+                        }
+                        th, td {
+                        padding: 15px;
+                        }
+                        </style>
 </head>
 <body>
 		
@@ -49,34 +61,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</li>
 						<!---->
 						<li class="col-md-2">
-						<a href="man_index.jsp" class="pink">
+						<a href="ManuDisplayEngine" class="pink">
 						<span class="glyphicon glyphicon-cog " aria-hidden="true"></span>
 						Manufacturing
 						</a>
 						</li>
 						<!---->
 						<li class="col-md-2">
-						<a href="man_services.jsp" class="sky">
+						<a href="modules/manufacturing/man_services.jsp" class="sky">
 						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
 						Design
 						</a>
 						</li>
 						<!---->
 						<li class="col-md-2">
-						<a href="man_news.jsp" class="gray">
+						<a href="modules/manufacturing/man_news.jsp" class="gray">
 						<span class="glyphicon glyphicon-thumbs-up " aria-hidden="true"></span>
 						Availability
 						</a>
 						</li>
                                                 <li class="col-md-2">
-						<a href="man_services.jsp" class="sky">
+						<a href="modules/manufacturing/man_blog.jsp" class="sky">
 						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
 						Price
 						</a>
 						</li>
 						<!---->
 						<li class="col-md-2">	
-						<a href="man_blog.jsp" class="green">
+						<a href="modules/manufacturing/man_contact.jsp" class="green">
 						<span class="glyphicon glyphicon-picture " aria-hidden="true"></span>
 						Report
 						</a>
@@ -137,122 +149,42 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 			</div>
 		</div>
+               <%Iterator itr1;%>
+                                                    <%List data1=(List)request.getAttribute("EmpData1");
+                                                    for(itr1=data1.iterator();itr1.hasNext();){
+                                                            %>
+                <div class="container">
+				<div class="col-md-6 news-left">
+					<div class="news-right">
+               <table>
+                                                           
+                   <tr><td>Model ID</td><td>Engine Name</td><td>Fuel type</td><td>Cylinder</td><td>Cubic Capacity</td><td>Cost</td></tr>         
+                                                            <tr>
+                                                                 
+                                                         
+                                                             
+                                                            <td><%= itr1.next()%></td>
+                                                       <td><%= itr1.next()%></td>
+                                                        <td><%= itr1.next()%></td>
+                                                         <td><%= itr1.next()%></td>
+                                                          <td><%= itr1.next()%></td>
+                                                            <td><%= itr1.next()%></td>
+                                                      
+                                                        
+                                                           
+                                                           
+                                                           
+                                                          </tr></table>
+                                        </div>
+                                </div>
+                </div> <%}%>
+                                
+		
 		<!-- our -->
 		<!-- high -->
-			<div class="high">
-				<div class="container">
-				<div class="col-md-6 high-left">
-						<img src="../../images/module_img7.jpg" class="img-responsive" alt="">
-					</div>
-					<div class="col-md-6 high-right">
-						<h3>HIGH QUALITY</h3>
-						<h5>AND PROFESSIONAL SERVICES</h3>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			
-		<!-- high -->
-		<!-- over -->			
-		<div class="over">
-			<div class="container">
-				<div class="col-md-8 over-left">
-					<h3>Experience Of Repair</h3>
-					<P>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpatt wisi enim ad minim veniam, quis nostrud exerci tation ullamco rper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-				</div>
-				<div class="col-md-4 over-right">
-					<div class="testimonials">
-						<h3>Testimonials</h3>
-											<!-- FlexSlider -->
-			<section class="slider">
-				<div class="flexslider">
-					<ul class="slides">
-						<li>	
-							<div class="tes">
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpatt wisi enim ad minim veniam, quis </p>
-								<h5>Healy</h5>
-							</div>
-						</li>
-						<li>	
-							<div class="tes">
-								<p>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpatt wisi enim ad minim veniam, quis nostrud exerci tation ullamco</p>
-								<h5>Nickkie</h5>
-							</div>
-						</li>
-						<li>	
-							<div class="tes">
-								<p> sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpatt wisi enim ad minim veniam, quis nostrud exerci tation ullamco rper suscipit lobortis nisl ut</p>
-								<h5>John</h5>
-							</div>
-						</li>
-						<li>	
-							<div class="tes">
-								<p>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpatt wisi enim ad minim veniam, quis nostrud exerci tation ullamc</p>
-								<h5>Rusev</h5>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-							<!-- FlexSlider -->
-									  <script defer="" src="../../js/module_jquery.flexslider.js"></script>
-									  <script type="text/javascript">
-										$(function(){
-										  SyntaxHighlighter.all();
-										});
-										$(window).load(function(){
-										  $('.flexslider').flexslider({
-											animation: "slide",
-											start: function(slider){
-											  $('body').removeClass('loading');
-											}
-										  });
-										});
-									  </script>
-								<!-- FlexSlider -->
 		
-					</div>
-				</div>
-					<div class="clearfix"> </div>
-			</div>
-		</div>
-		<!-- over -->
-		<div class="team">
-			<div class="container">
-				<div class="col-md-3 team-left">
-					<img src="../../images/module_img5.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="col-md-3 team-left">
-					<img src="../../images/module_img3.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="col-md-3 team-left">
-					<img src="../../images/module_img4.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="col-md-3 team-left">
-					<img src="../../images/module_img2.jpg" class="img-responsive" alt="">
-				</div>
-					<div class="clearfix"></div>
-			</div>
-		</div>
-		<!-- expert -->
-			<div class="expert">
-				<div class="container">
-					<div class="col-md-4 expert-left">
-						<h3>Expert Service By Best Technicians</h3>
-						<P>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpatt wisi enim ad minim veniam, quis nostrud exerci tation ullamco rper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</P>
-					</div>
-					<div class="col-md-4 expert-left">
-						<img src="../../images/module_img6.jpg" class="img-responsive" alt="">
-					</div>
-					<div class="col-md-4 expert-left">
-						<h3>Highest Standard Of Car Repair</h3>
-						<P>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpatt wisi enim ad minim veniam, quis nostrud exerci tation ullamco rper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</P>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		<!-- expert -->
+			
+             
 		<!-- footer -->
 		<div class="footer">
 	<div class="container">
